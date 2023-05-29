@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML Academy: Седона</title>
+	</head>
+
+	<body>
+		<header class="page-header">
+			<a class="page-header-logo" href="index.html">
+				<img src="" alt="Логотип Седоны">
+			</a>
+
+			<nav class="navigation">
+				<ul class="navigation-list">
+					<li class="navigation-item">
+						<a class="navigation-link" href="index.html">Главная</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link" href="#">О Седоне</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link navigation-link-current">Гостиницы</a>
+					</li>
+				</ul>
+
+				<ul class="navigation-list">
+					<li class="navigation-item">
+						<a class="navigation-link" href="#">
+							<span class="visually-hidden">Поиск</span>
+						</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link" href="#">
+							<span class="visually-hidden">Избранное</span>
+						</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link button" href="#">Хочу сюда!</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main-catalog">
+			<div class="container">
+				<header class="catalog-header">
+					<h1 class="catalog-header-title">Гостиницы Седоны</h1>
+
+					<ol class="breadcrumbs">
+						<li class="breadcrumbs-item">
+							<a class="breadcrumbs-link" href="index.html">
+								<span class="visually-hidden">Главная страница</span>
+							</a>
+						</li>
+						<li class="breadcrumbs-item">
+							<a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+						</li>
+					</ol>
+				</header>
+
+				<section class="filters">
+					<form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
+						<fieldset class="filters-form-fieldset">
+							<legend>Инфраструктура:</legend>
+
+							<p>
+								<label for="">
+									<input class="filters-form-input" type="checkbox" name="pool" checked>
+									<span class="filters-form-label">Бассейн</span>
+								</label>
+							</p>
+
+							<p>
+								<label for="">
+									<input class="filters-form-input" type="checkbox" name="parking" checked>
+									<span class="filters-form-label">Парковка</span>
+								</label>
+							</p>
+
+							<p>
+								<label for="">
+									<input class="filters-form-input" type="checkbox" name="Wi-Fi">
+									<span class="filters-form-label">Wi-Fi</span>
+								</label>
+							</p>
+						</fieldset>
+
+						<fieldset class="filters-form-fieldset">
+							<legend>Тип Жилья:</legend>
+
+							<p>
+								<label for="">
+									<input class="filters-form-input" type="radio" name="housing-type" value="hotel" checked>
+									<span class="filters-form-label">Гостиница</span>
+								</label>
+							</p>
+
+							<p>
+								<label for="">
+									<input class="filters-form-input" type="radio" name="housing-type" value="motel">
+									<span class="filters-form-label">Мотель</span>
+								</label>
+							</p>
+
+							<p>
+								<label for="">
+									<input class="filters-form-input" type="radio" name="housing-type" value="apartments">
+									<span class="filters-form-label">Апартаменты</span>
+								</label>
+							</p>
+						</fieldset>
+
+						<fieldset class="filters-form-fieldset">
+							<legend>Стоимость, ₽:</legend>
+
+							<label for="">
+								<span class="filters-form-label">от</span>
+								<input class="filters-form-input" type="text" value="0">
+							</label>
+
+							<label for="">
+								<span class="filters-form-label">до</span>
+								<input class="filters-form-input" type="text" value="9000">
+							</label>
+
+							<label for="">
+								<span class="visually-hidden">Диапазон выбора цены</span>
+								<input class="filters-form-input" type="range">
+							</label>
+						</fieldset>
+
+						<button class="filters-form-button button" type="submit">Применить</button>
+						<button class="filters-form-button button" type="reset">Сбросить</button>
+					</form>
+				</section>
+			</div>
+		</main>
+
+		<footer class="page-footer">
+			<ul class="footer-social-list">
+				<li class="footer-social-item">
+					<a class="footer-social-link" href="#">
+						<img class="footer-social-image" src="" alt="ВКонтакте">
+					</a>
+				</li>
+				<li class="footer-social-item">
+					<a class="footer-social-link" href="#">
+						<img class="footer-social-image" src="" alt="Телеграм">
+					</a>
+				</li>
+				<li class="footer-social-item">
+					<a class="footer-social-link" href="#">
+						<img class="footer-social-image" src="" alt="YouTube">
+					</a>
+				</li>
+			</ul>
+
+			<a href="tel:+78128121212">
+				<p class="footer-phone">+7 (812) 812-12-12</p>
+			</a>
+
+			<a class="footer-author-link" href="https://htmlacademy.ru/">
+				<img class="footer-author-logo" src="" alt="HTML Academy">
+			</a>
+		</footer>
+	</body>
+
+</html>
