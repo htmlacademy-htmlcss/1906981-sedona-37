@@ -183,6 +183,155 @@ body {
   border: none;
 }
 
+/* Catalog */
+.container {
+  background-image: url("../images/catalog/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #82B3D3;
+}
+
+.catalog-header {
+  color: #ffffff;
+}
+
+.catalog-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-products {
+  color: #ffffff;
+}
+
+.catalog-filter-group > legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter-group:last-of-type .catalog-filter-label {
+  line-height: 24px;
+  text-align: right;
+}
+
+.catalog-filter-group:last-of-type .catalog-filter-input[value] {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-filter-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.catalog-filter-button[type="submit"] {
+  background-color: #82B3D3;
+}
+
+.catalog-filter-button[type="reset"] {
+  background-color: transparent;
+}
+
+.catalog-search-result, .catalog-items-amount {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control > option[value] {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.catalog-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-card-housing-type, .catalog-card-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-card-price {
+  text-align: right;
+}
+
+.catalog-card-price b {
+  font-weight: 400;
+}
+
+.catalog-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a.catalog-card-button {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #756157;
+  border: none;
+}
+
+button.catalog-card-button {
+  color: #ffffff;
+  background-color: #82B3D3;
+  border: none;
+}
+
+.catalog-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.main-catalog > .subscribe {
+  color: #000000;
+  background: none;
+}
+
 /* Footer */
 .footer-phone {
   font-size: 40px;
