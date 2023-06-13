@@ -46,8 +46,8 @@ body {
   background-color: rgba(131, 179, 211, 0.474);
 }
 
-/* Advantages */
-.advantages-title {
+/* Section */
+.section-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -56,6 +56,7 @@ body {
   color: #000000;
 }
 
+/* Advantages */
 .advantages-text {
   text-align: center;
 }
@@ -89,15 +90,6 @@ body {
 }
 
 /* Services */
-.services-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-}
-
 .services-text {
   text-align: center;
 }
@@ -122,15 +114,6 @@ body {
 }
 
 /* Search */
-.search-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-}
-
 .search-description {
   text-align: center;
 }
@@ -156,11 +139,7 @@ body {
 }
 
 .subscribe-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
+  color: #ffffff;
 }
 
 .subscribe-description {
@@ -193,6 +172,11 @@ body {
 
 .catalog-header {
   color: #ffffff;
+}
+
+.breadcrumbs-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .catalog-header-title {
