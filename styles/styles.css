@@ -14,12 +14,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /* Header */
@@ -36,6 +44,32 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #756157;
+}
+
+.navigation {
+  width: 1020px;
+  margin: auto;
+  display: flex;
+}
+
+.navigation-list {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-left: auto;
+}
+
+.header-logo {
+  margin-right: 30px;
+}
+
+/* Main */
+.main-container {
+  flex-grow: 1;
 }
 
 /* Hero */
@@ -326,4 +360,18 @@ button.catalog-card-button {
 
 .footer-link {
   text-decoration: none;
+  width: 331px;
+}
+
+.footer-container {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  width: 142px;
+  margin: 0;
+  padding: 0;
 }
