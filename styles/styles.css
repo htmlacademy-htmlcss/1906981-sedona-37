@@ -648,6 +648,11 @@ button.button {
   text-decoration: none;
 }
 
+.catalog-card-description {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-card-housing-type, .catalog-card-price {
   font-size: 18px;
   line-height: 21px;
@@ -659,6 +664,11 @@ button.button {
 
 .catalog-card-price b {
   font-weight: 400;
+}
+
+.catalog-card-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-card-button {
@@ -695,6 +705,29 @@ button.catalog-card-button-favourite {
   text-transform: uppercase;
   text-align: center;
   background-color: #F2F2F2;
+  padding: 9px 23px;
+  width: 140px;
+  border-radius: 4px;
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg"), url("../images/catalog/star.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0, 9%, 18%, 27%, 36%;
+}
+
+.stars-2 {
+  background-position: 0, 9%, 0, 0, 0;
+}
+
+.stars-3 {
+  background-position: 0, 9%, 18%, 0, 0;
+}
+
+.stars-4 {
+  background-position: 0, 9%, 18%, 27%, 0;
 }
 
 .pagination {
