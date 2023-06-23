@@ -343,11 +343,18 @@ button.button {
 .subscribe-form {
   margin: auto;
   width: 684px;
+  display: flex;
 }
 
 .subscribe-form-input {
   font-size: 18px;
   line-height: 24px;
+  width: 452px;
+  padding: 14px 20px;
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  background-color: #F2F2F2;
+  font-family: inherit;
 }
 
 .subscribe-form-button {
@@ -359,6 +366,7 @@ button.button {
   color: #ffffff;
   background-color: #82B3D3;
   border: none;
+  border-radius: 0px 4px 4px 0px;
   box-sizing: border-box;
   padding: 8px 50px;
 }
