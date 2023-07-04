@@ -479,12 +479,35 @@ button.button {
   list-style-type: none;
 }
 
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 28px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 21px;
+  background-image: url("../images/catalog/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 21px;
+  top: 0;
+  right: -18px;
+}
+
 .breadcrumbs-link {
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   line-height: 21px;
-  align-self: center;
+  display: flex;
 }
 
 .catalog-header-title {
