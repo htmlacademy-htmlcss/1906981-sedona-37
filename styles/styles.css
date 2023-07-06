@@ -123,6 +123,10 @@ button.button {
 }
 
 /* Header */
+.header {
+  z-index: 1;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -239,8 +243,10 @@ button.button {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.header-logo {
-  margin-right: 30px;
+.navigation-logo {
+  margin-right: 28px;
+  z-index: 1;
+  margin-bottom: -12px;
 }
 
 /* Main */
@@ -253,7 +259,7 @@ button.button {
   background-image: url("../images/hero/divider.svg"), url("../images/hero/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
-  background-position: bottom;
+  background-position: 0 100%, bottom;
   background-color: rgba(131, 179, 211, 0.474);
   padding-top: 52px;
   padding-bottom: 82px;
@@ -872,7 +878,7 @@ button.button {
 .catalog-card-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 32px;
   margin: 0;
 }
 
