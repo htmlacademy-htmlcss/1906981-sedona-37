@@ -142,12 +142,12 @@
             </li>
             <li class="services-item services-item-food">
               <h3 class="services-item-title">Еда</h3>
-              <p class="services-item-description">Всегда заказывайте топовый фирменный бургер, вы не
+              <p class="services-item-description">Всегда заказывайте <br>топовый фирменный бургер, вы не
                 разочаруетесь!</p>
             </li>
             <li class="services-item services-item-souvenir">
               <h3 class="services-item-title">Сувениры</h3>
-              <p class="services-item-description">Не только китайского, но и настоящего местного
+              <p class="services-item-description">Не только китайского, <br>но и настоящего местного
                 производства!</p>
             </li>
           </ul>
@@ -217,6 +217,79 @@
           </svg>
         </a>
       </footer>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+            <label class="date-field">
+              <span class="modal-label">Дата Заезда:</span>
+              <input class="modal-input" type="text" value="27 апреля 2020">
+              <button class="date" type="button">
+                <span class="visually-hidden">Изменить дату.</span>
+              </button>
+              <span class="field-hint field-hint-error">Мы не можем отправить вас в прошлое.</span>
+            </label>
+
+            <label class="date-field">
+              <span class="modal-label">Дата Выезда:</span>
+              <input class="modal-input" type="text" value="1 сентября 2023">
+              <button class="date" type="button">
+                <span class="visually-hidden">Изменить дату.</span>
+              </button>
+              <span class="field-hint">На эти даты есть свободные номера. Пока есть.</span>
+            </label>
+
+            <div class="people-amount-wrapper">
+              <label class="people-amount-field">
+                <span class="modal-label">Взрослые:</span>
+                <div class="amount-wrapper">
+                  <button class="button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                  </button>
+                  <input class="modal-input" type="number" value="2">
+                  <button class="button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                  </button>
+                </div>
+              </label>
+
+              <label class="people-amount-field">
+                <span class="modal-label">
+                  <span class="modal-label">Дети:</span>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+
+                <div class="amount-wrapper">
+                  <button class="button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                  </button>
+                  <input class="modal-input" type="number" value="2">
+                  <button class="button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                  </button>
+                </div>
+              </label>
+            </div>
+
+            <button class="button button-blue" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
