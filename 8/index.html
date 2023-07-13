@@ -97,12 +97,12 @@
           </div>
 
           <ul class="advantages-list">
-            <li class="advantages-item brightblue-background">
+            <li class="advantages-item advantages-item-min brightblue-background">
               <h3 class="advantages-item-title">Настоящий городок</h3>
               <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="advantages-item advantage-image advantage-image-1">
-              <img class="advantages-item-image" src="images/advantages/photo-1.jpg" width="800" height="387"
+              <img class="advantages-item-image" src="images/advantages/photo-1.jpg" width="800" height="385"
                 alt="Седона">
             </li>
             <li class="advantages-item">
@@ -118,10 +118,10 @@
               <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item advantage-image advantage-image-2">
-              <img class="advantages-item-image" src="images/advantages/photo-2.jpg" width="800" height="387"
+              <img class="advantages-item-image" src="images/advantages/photo-2.jpg" width="800" height="385"
                 alt="Мост дьявола">
             </li>
-            <li class="advantages-item brightblue-background">
+            <li class="advantages-item advantages-item-min brightblue-background">
               <h3 class="advantages-item-title">Там есть мост дьявола</h3>
               <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
@@ -220,7 +220,7 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть.</span>
@@ -230,23 +230,27 @@
           <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
 
           <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
-            <label class="date-field">
-              <span class="modal-label">Дата Заезда:</span>
-              <input class="modal-input" type="text" value="27 апреля 2020">
-              <button class="date" type="button">
-                <span class="visually-hidden">Изменить дату.</span>
-              </button>
-              <span class="field-hint field-hint-error">Мы не можем отправить вас в прошлое.</span>
-            </label>
+            <span class="date-wrapper">
+              <label class="date-field">
+                <span class="modal-label">Дата Заезда:</span>
+                <input class="modal-input" type="text" value="27 апреля 2020" placeholder="Укажите дату">
+                <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
+                </button>
+              </label>
+              <p class="field-hint field-hint-error">Мы не можем отправить вас в прошлое.</p>
+            </span>
 
-            <label class="date-field">
-              <span class="modal-label">Дата Выезда:</span>
-              <input class="modal-input" type="text" value="1 сентября 2023">
-              <button class="date" type="button">
-                <span class="visually-hidden">Изменить дату.</span>
-              </button>
-              <span class="field-hint">На эти даты есть свободные номера. Пока есть.</span>
-            </label>
+            <span class="date-wrapper">
+              <label class="date-field">
+                <span class="modal-label">Дата Выезда:</span>
+                <input class="modal-input" type="text" value="1 сентября 2023" placeholder="Укажите дату">
+                <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
+                </button>
+              </label>
+              <p class="field-hint">На эти даты есть свободные номера. Пока есть.</p>
+            </span>
 
             <div class="people-amount-wrapper">
               <label class="people-amount-field">
