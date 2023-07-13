@@ -167,7 +167,7 @@ button.button {
 }
 
 .navigation {
-  width: 1020px;
+  width: 1060px;
   margin: auto;
   display: flex;
 }
@@ -261,8 +261,8 @@ button.button {
   background-size: 100% auto, cover;
   background-position: 0 100%, bottom;
   background-color: rgba(131, 179, 211, 0.474);
-  padding-top: 52px;
-  padding-bottom: 82px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .hero-text {
@@ -283,7 +283,7 @@ button.button {
 
 /* Advantages */
 .advantages-header {
-  padding: 69px 0;
+  padding: 70px 0;
   margin-bottom: 21px;
 }
 
@@ -314,7 +314,7 @@ button.button {
   text-transform: uppercase;
   color: #000000;
   width: 172px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .advantages-item-title::after {
@@ -342,8 +342,15 @@ button.button {
 }
 
 .advantages-item {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(131, 179, 211, 0.12);
-  padding: 103px 85px;
+  padding: 111px 85px;
+  min-height: 385px;
+}
+
+.advantages-item-min {
+  padding: 102px 85px;
 }
 
 .advantage-image {
@@ -447,7 +454,7 @@ button.button {
 
 /* Search */
 .search {
-  padding: 96px 0;
+  padding: 97px 0;
 }
 
 .search-title {
@@ -500,7 +507,7 @@ button.button {
   text-align: center;
   width: 475px;
   margin: auto;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .subscribe-form {
@@ -1139,7 +1146,7 @@ button.catalog-card-button-favourite {
 .footer-container {
   width: 1060px;
   margin: 0 auto;
-  padding: 40px 0 30px 0;
+  padding: 46px 0 30px 0;
   display: flex;
   justify-content: space-between;
 }
