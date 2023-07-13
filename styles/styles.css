@@ -822,6 +822,7 @@ button.button {
   position: absolute;
   background-color: #fff;
   height: 4px;
+  cursor: pointer;
 }
 
 .range-toggle {
@@ -1290,6 +1291,7 @@ button.catalog-card-button-favourite {
   background-color: #F2F2F2;
   border-radius: 4px;
   border-style: none;
+  font-family: inherit;
 }
 
 .modal-input[value] {
@@ -1363,8 +1365,8 @@ button.catalog-card-button-favourite {
 
 .tooltip {
   position: absolute;
-  top: 13px;
-  left: 49px;
+  top: 11px;
+  left: 48px;
 }
 
 .tooltip-toggle {
@@ -1387,11 +1389,11 @@ button.catalog-card-button-favourite {
   line-height: 20px;
   font-weight: normal;
   color: #ffffff;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 19px 23px 22px;
   width: 256px;
   position: absolute;
-  top: 41px;
-  left: -105px;
+  top: 39px;
+  left: -106px;
 }
 
 .tooltip-text::before {
