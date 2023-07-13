@@ -1230,12 +1230,16 @@ button.catalog-card-button-favourite {
 .modal-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 88px;
+  gap: 23px 88px;
 }
 
-.modal-form > label, .people-amount-wrapper > label {
+.modal-form label, .people-amount-wrapper label {
   display: flex;
   align-items: center;
+}
+
+.date-wrapper {
+  width: 100%;
 }
 
 .date-field {
@@ -1316,6 +1320,7 @@ button.catalog-card-button-favourite {
   padding: 18px 77px;
   border-radius: 10px;
   width: 100%;
+  margin-top: 25px;
 }
 
 .button-minus, .button-plus {
@@ -1329,12 +1334,14 @@ button.catalog-card-button-favourite {
   background-image: url("../images/modal/button-minus.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 4px 0 0 4px;
 }
 
 .button-plus {
   background-image: url("../images/modal/button-plus.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  border-radius: 0 4px 4px 0;
 }
 
 .amount-wrapper {
@@ -1391,13 +1398,13 @@ button.catalog-card-button-favourite {
 }
 
 .field-hint {
-  position: absolute;
+  margin: 0;
+  margin-left: 137px;
+  margin-top: 4px;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
   padding: 0 20px;
-  top: 48px;
-  left: 136px;
 }
 
 .field-hint-error {

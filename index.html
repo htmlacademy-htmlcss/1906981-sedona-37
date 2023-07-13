@@ -229,23 +229,27 @@
           <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
 
           <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
-            <label class="date-field">
-              <span class="modal-label">Дата Заезда:</span>
-              <input class="modal-input" type="text" value="27 апреля 2020">
-              <button class="date" type="button">
-                <span class="visually-hidden">Изменить дату.</span>
-              </button>
-              <span class="field-hint field-hint-error">Мы не можем отправить вас в прошлое.</span>
-            </label>
+            <span class="date-wrapper">
+              <label class="date-field">
+                <span class="modal-label">Дата Заезда:</span>
+                <input class="modal-input" type="text" value="27 апреля 2020">
+                <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
+                </button>
+              </label>
+              <p class="field-hint field-hint-error">Мы не можем отправить вас в прошлое.</p>
+            </span>
 
-            <label class="date-field">
-              <span class="modal-label">Дата Выезда:</span>
-              <input class="modal-input" type="text" value="1 сентября 2023">
-              <button class="date" type="button">
-                <span class="visually-hidden">Изменить дату.</span>
-              </button>
-              <span class="field-hint">На эти даты есть свободные номера. Пока есть.</span>
-            </label>
+            <span class="date-wrapper">
+              <label class="date-field">
+                <span class="modal-label">Дата Выезда:</span>
+                <input class="modal-input" type="text" value="1 сентября 2023">
+                <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
+                </button>
+              </label>
+              <p class="field-hint">На эти даты есть свободные номера. Пока есть.</p>
+            </span>
 
             <div class="people-amount-wrapper">
               <label class="people-amount-field">
