@@ -138,15 +138,6 @@ button.button {
   padding: 20px 16px;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
-  color: rgba(0, 0, 0, 0.60);
-}
-
-.navigation-link:active {
-  color: rgba(0, 0, 0, 0.30);
-}
-
 .navigation-link-current {
   margin-bottom: -20px;
 }
@@ -704,7 +695,7 @@ button.button {
   position: absolute;
   width: 20px;
   height: 20px;
-  border-style: none;
+  outline: 3px solid transparent;
   border-radius: 4px;
   background-color: #fff;
   left: 0;
@@ -718,6 +709,7 @@ button.button {
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
+  outline: 3px solid transparent;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -729,6 +721,24 @@ button.button {
   background-color: rgba(63, 94, 114, 1);
   left: 5px;
   top: 5px;
+}
+
+.control-input[type="checkbox"]:hover + .control-mark,
+.control-input[type="radio"]:hover + .control-mark,
+.control:hover .control-label {
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.control-input:focus + .control-mark {
+  outline-color: #83B3D3;
+}
+
+.control-input[type="checkbox"]:active + .control-mark,
+.control-input[type="radio"]:active + .control-mark,
+.control:active .control-label {
+  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .filter-label, .control-label {
@@ -835,6 +845,14 @@ button.button {
   cursor: pointer;
 }
 
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
 .toggle-min {
   top: -8px;
 }
@@ -872,6 +890,7 @@ button.button {
   font-size: 18px;
   line-height: 21px;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .select-control > option[value] {
@@ -1236,6 +1255,20 @@ button.catalog-card-button-favourite {
   cursor: pointer;
 }
 
+.modal-close-button:hover,
+.modal-close-button:active {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  outline: none;
+  background-image: url("../images/modal/cross-active.svg");
+}
+
 .modal-title {
   text-align: left;
   margin-bottom: 64px;
@@ -1309,12 +1342,13 @@ button.catalog-card-button-favourite {
 
 .date {
   position: absolute;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
   border-style: none;
   background-image: url("../images/modal/date.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
-  right: 20px;
+  right: 22px;
 }
 
 .modal-input[type="number"] {
@@ -1326,6 +1360,19 @@ button.catalog-card-button-favourite {
 .modal-input[type="number"]::-webkit-inner-spin-button,
 .modal-input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+.modal-input:placeholder-shown {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-input[type="text"]:hover,
+.modal-input[type="text"]:focus {
+  background-color: #E6E6E6;
+}
+
+.modal-input[type="text"]:focus {
+  outline: 3px solid #83B3D3;
 }
 
 .modal-form button[type="submit"] {
@@ -1352,11 +1399,29 @@ button.catalog-card-button-favourite {
   border-radius: 4px 0 0 4px;
 }
 
+.button-minus:hover,
+.button-minus:focus {
+  background-image: url("../images/modal/button-minus-hover.svg");
+}
+
+.button-minus:active {
+  background-image: url("../images/modal/button-minus-active.svg");
+}
+
 .button-plus {
   background-image: url("../images/modal/button-plus.svg");
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 0 4px 4px 0;
+}
+
+.button-plus:hover,
+.button-plus:focus {
+  background-image: url("../images/modal/button-plus-hover.svg");
+}
+
+.button-plus:active {
+  background-image: url("../images/modal/button-plus-active.svg");
 }
 
 .amount-wrapper {
