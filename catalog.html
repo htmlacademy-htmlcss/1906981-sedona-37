@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
@@ -99,23 +101,26 @@
 
                   <ul class="filter-list">
                     <li class="filter-item">
-                      <label for="">
-                        <input class="filter-input" type="checkbox" name="pool" checked>
-                        <span class="filter-label">Бассейн</span>
+                      <label class="control">
+                        <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
 
                     <li class="filter-item">
-                      <label for="">
-                        <input class="filter-input" type="checkbox" name="parking" checked>
-                        <span class="filter-label">Парковка</span>
+                      <label class="control">
+                        <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
 
                     <li class="filter-item">
-                      <label for="">
-                        <input class="filter-input" type="checkbox" name="Wi-Fi">
-                        <span class="filter-label">Wi-Fi</span>
+                      <label class="control">
+                        <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -126,23 +131,26 @@
 
                   <ul class="filter-list">
                     <li class="filter-item">
-                      <label for="">
-                        <input class="filter-input" type="radio" name="housing-type" value="hotel" checked>
-                        <span class="filter-label">Гостиница</span>
+                      <label class="control">
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
 
                     <li class="filter-item">
-                      <label for="">
-                        <input class="filter-input" type="radio" name="housing-type" value="motel">
-                        <span class="filter-label">Мотель</span>
+                      <label class="control">
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
 
                     <li class="filter-item">
-                      <label for="">
-                        <input class="filter-input" type="radio" name="housing-type" value="apartments">
-                        <span class="filter-label">Апартаменты</span>
+                      <label class="control">
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -154,19 +162,28 @@
                   <div class="filter-inputs">
                     <label for="">
                       <span class="filter-label">от</span>
-                      <input class="filter-input" type="text" value="0">
+                      <input class="filter-input" type="number" value="0" name="min-price">
                     </label>
 
                     <label for="">
                       <span class="filter-label">до</span>
-                      <input class="filter-input" type="text" value="9000">
+                      <input class="filter-input" type="number" value="9000" name="max-price">
                     </label>
                   </div>
 
-                  <label for="">
-                    <span class="visually-hidden">Диапазон выбора цены</span>
-                    <input class="filter-input" type="range">
-                  </label>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="width: 226px; left: 0;">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
 
                 <div class="filter-buttons">
@@ -303,6 +320,8 @@
             </li>
           </ul>
 
+          <span class="catalog-divider"></span>
+
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-link-current">1</a>
@@ -317,7 +336,7 @@
               <a class="pagination-link button-blue" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link button-blue" href="#">...</a>
+              <a class="pagination-link white" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link button-blue" href="#">10</a>
