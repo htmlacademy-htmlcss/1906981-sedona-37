@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
@@ -96,12 +98,12 @@
           </div>
 
           <ul class="advantages-list">
-            <li class="advantages-item brightblue-background">
+            <li class="advantages-item advantages-item-min brightblue-background">
               <h3 class="advantages-item-title">Настоящий городок</h3>
               <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="advantages-item advantage-image advantage-image-1">
-              <img class="advantages-item-image" src="images/advantages/photo-1.jpg" width="800" height="387"
+              <img class="advantages-item-image" src="images/advantages/photo-1.jpg" width="800" height="385"
                 alt="Седона">
             </li>
             <li class="advantages-item">
@@ -117,10 +119,10 @@
               <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item advantage-image advantage-image-2">
-              <img class="advantages-item-image" src="images/advantages/photo-2.jpg" width="800" height="387"
+              <img class="advantages-item-image" src="images/advantages/photo-2.jpg" width="800" height="385"
                 alt="Мост дьявола">
             </li>
-            <li class="advantages-item brightblue-background">
+            <li class="advantages-item advantages-item-min brightblue-background">
               <h3 class="advantages-item-title">Там есть мост дьявола</h3>
               <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
@@ -142,12 +144,12 @@
             </li>
             <li class="services-item services-item-food">
               <h3 class="services-item-title">Еда</h3>
-              <p class="services-item-description">Всегда заказывайте топовый фирменный бургер, вы не
+              <p class="services-item-description">Всегда заказывайте <br>топовый фирменный бургер, вы не
                 разочаруетесь!</p>
             </li>
             <li class="services-item services-item-souvenir">
               <h3 class="services-item-title">Сувениры</h3>
-              <p class="services-item-description">Не только китайского, но и настоящего местного
+              <p class="services-item-description">Не только китайского, <br>но и настоящего местного
                 производства!</p>
             </li>
           </ul>
@@ -217,6 +219,83 @@
           </svg>
         </a>
       </footer>
+    </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+            <span class="date-wrapper">
+              <label class="date-field">
+                <span class="modal-label">Дата Заезда:</span>
+                <input class="modal-input" type="text" value="27 апреля 2020" placeholder="Укажите дату">
+                <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
+                </button>
+              </label>
+              <p class="field-hint field-hint-error">Мы не можем отправить вас в прошлое.</p>
+            </span>
+
+            <span class="date-wrapper">
+              <label class="date-field">
+                <span class="modal-label">Дата Выезда:</span>
+                <input class="modal-input" type="text" value="1 сентября 2023" placeholder="Укажите дату">
+                <button class="date" type="button">
+                  <span class="visually-hidden">Изменить дату.</span>
+                </button>
+              </label>
+              <p class="field-hint">На эти даты есть свободные номера. Пока есть.</p>
+            </span>
+
+            <div class="people-amount-wrapper">
+              <label class="people-amount-field">
+                <span class="modal-label">Взрослые:</span>
+                <div class="amount-wrapper">
+                  <button class="button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                  </button>
+                  <input class="modal-input" type="number" value="2">
+                  <button class="button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                  </button>
+                </div>
+              </label>
+
+              <label class="people-amount-field">
+                <span class="modal-label">
+                  <span class="modal-label">Дети:</span>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+
+                <div class="amount-wrapper">
+                  <button class="button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                  </button>
+                  <input class="modal-input" type="number" value="2">
+                  <button class="button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                  </button>
+                </div>
+              </label>
+            </div>
+
+            <button class="button button-blue" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
