@@ -1297,7 +1297,7 @@ button.catalog-card-button-favourite {
   color: #000000;
 }
 
-.main-catalog > .subscribe, .main-catalog > .subscribe > .subscribe-title {
+.main-catalog > .subscribe, .main-catalog .subscribe-title {
   color: #000000;
   background: none;
 }
